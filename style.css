@@ -1,0 +1,379 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3.5rem;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 25px 15%;
+    transition-duration: .3s;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span {
+    color: rgb(68, 10, 134);
+}
+
+
+.navbar {
+    display: flex;
+}
+
+.navbar li{
+    position: relative;
+}
+
+.navbar a{
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: rgb(68, 10, 134);
+    left: 0;
+    bottom: -4px;
+    transition: ease .40s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+#menu-icon {
+    font-size: 26px;
+    color: white;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+
+.h-btn {
+    padding: 0 20px;
+    height: 40px;
+    display: inline-block;
+    line-height: 42px;
+    background: rgb(68, 10, 134);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all .30s;
+}
+
+.h-btn:hover {
+    transform: translateY(-5px);
+}
+
+section {
+    padding: 120px 15%;
+}
+
+.home {
+    height: 100vh;
+    width: 135%;
+    background: url(IMG_0237.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+
+.home-text h1 {
+    margin: 20px 0px 20px;
+    font-size: 40px;
+}
+
+span {
+    color: rgb(68, 10, 134);
+}
+
+.home-text h3 {
+    font-size: 25px;
+    margin-bottom: 55px;
+}
+
+.home-text h4 {
+    color: grey;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+
+
+header.sticky {
+    padding: 12px 15%;
+    background: black;
+}
+
+.sticky .navbar a::after {
+    background: white;
+}
+
+.sticky .h-btn {
+    background: white;
+    color: rgb(68, 10, 134);
+}
+
+.about {
+    background: #191919;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 2rem;
+}
+
+.about-img img {
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 30px;
+    color: white;
+    line-height: 28px;
+    max-width: 590px;
+    margin-bottom: 45px;
+    letter-spacing: 1px;
+}
+
+.btn {
+    display: inline-block;
+    background: rgb(68, 10, 134);
+    color: white;
+    border: 2px solid transparent;
+    font-weight: 600;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: ease .35s;
+}
+
+.btn:hover {
+    transform: translateY(-8px);
+    border: 2px solid rgb(68, 10, 134);
+    background: transparent;
+}
+
+.projects {
+    background: #191919;
+    
+}
+
+.projects-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 4.4rem;
+}
+
+.projects-text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.projects-text p {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 45px;
+}
+
+.services {
+    background: #191919;
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 4.4rem;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h6 {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.heading h2 {
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1.6rem;
+}
+
+.heading p {
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+    line-height: 1.8;
+}
+
+.col {
+    position: relative;
+}
+
+.col img {
+   max-width: 100%;
+   width: 620px;
+   height: 400px;
+}
+
+.col h3 {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    transition: all .35s;
+}
+
+
+.layer:hover {
+    background: linear-gradient(to bottom, rgba(22,22,22, 0.06) 0%,  rgb(68, 10, 134)); 
+}
+
+
+.layer a {
+    position: absolute;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all .35s;
+}
+
+
+.layer:hover a {
+    bottom: 49%;
+    opacity: 1;
+}
+
+.layer a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: white;
+    left: 0;
+    bottom: -4px;
+    transition: ease .40s;
+}
+
+.layer a:hover::after {
+    width: 100%;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    column-gap: 3.5rem;
+}
+
+.social .bx {
+    font-size: 1.3rem;
+    padding: 20px;
+    border-radius: 50%;
+    color: white;
+    background: rgb(68, 10, 134);
+    display: grid;
+    grid-gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 4.4rem;
+    margin-left: 12rem;
+}
+
+.skills-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 4.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
